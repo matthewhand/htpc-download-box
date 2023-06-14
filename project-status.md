@@ -1,20 +1,17 @@
 
-## Project Status
+# Project Status
 
-### Completed Tasks
-- Docker setup
-- Organizr setup
-- Nginx setup
-- Sonarr setup
-- Radarr setup
+## Completed Tasks
+- Setup Sonarr
+- Setup Radarr
 
-### In Progress Tasks
-- Transmission with VPN setup
-- Jackett setup
-
-### Pending Tasks
-- Plex setup
-- Tautulli setup
-- Portainer setup
-- Watchtower setup
-- WireGuard setup
+## Pending Tasks
+- Setup Organizr
+- Setup Portainer
+- Setup Plex
+- Setup Tautulli
+- Setup Jackett
+- Setup Transmission
+- Setup Bazarr
+- Setup Watchtower
+- Setup Wireguard
