@@ -1,3 +1,3 @@
 - [✓] Setup OpenVPN and Transmission with WebUI
 - [✓] Setup Sonarr
-- [✗] Setup Radarr
+- [✓] Setup Radarr
