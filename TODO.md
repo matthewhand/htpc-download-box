@@ -1,3 +1,13 @@
-- [✓] Setup OpenVPN and Transmission with WebUI
-- [✓] Setup Sonarr
-- [✓] Setup Radarr
+
+- [x] Setup Docker
+- [x] Setup Organizr
+- [x] Setup Nginx
+- [x] Setup Sonarr
+- [x] Setup Radarr
+- [ ] Setup Transmission with VPN
+- [ ] Setup Jackett
+- [ ] Setup Plex
+- [ ] Setup Tautulli
+- [ ] Setup Portainer
+- [ ] Setup Watchtower
+- [ ] Setup WireGuard
