@@ -4,7 +4,7 @@
 - [x] Setup Nginx
 - [x] Setup Sonarr
 - [x] Setup Radarr
-- [ ] Setup Transmission with VPN
+- [x] Setup Transmission with VPN
 - [ ] Setup Jackett
 - [ ] Setup Plex
 - [ ] Setup Tautulli
