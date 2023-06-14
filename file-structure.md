@@ -24,3 +24,8 @@ project_name/
 ├── README.md           # Project description
 ├── requirements.txt    # Development dependencies
 └── setup.py            # Makes the project pip installable
+
+
+- Jackett:
+  - Config: /path/to/your/config/jackett
+  - Downloads: /path/to/your/downloads/jackett
