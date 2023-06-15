@@ -1,23 +1,17 @@
 
-version: '3.3'
+version: '3'
 services:
-  radarr:
-    image: linuxserver/radarr
+  service1:
+    image: image1
+    environment:
+      - ENV_VAR1=value1
     volumes:
-      - /home/chatgpt/htpc-download-box/config/radarr:/config
-      - /home/chatgpt/htpc-download-box/movies:/movies
-      - /home/chatgpt/htpc-download-box/downloads:/downloads
-  sonarr:
-    image: linuxserver/sonarr
+      - /path/to/volume1:/path/in/container1
+  service2:
+    image: image2
+    environment:
+      - ENV_VAR2=value2
     volumes:
-      - /home/chatgpt/htpc-download-box/config/sonarr:/config
-      - /home/chatgpt/htpc-download-box/tv:/tv
-      - /home/chatgpt/htpc-download-box/downloads:/downloads
-  nginx:
-    image: nginx
-    volumes:
-      - /home/chatgpt/htpc-download-box/config/nginx:/etc/nginx/conf.d
-  organizr:
-    image: organizr/organizr
-    volumes:
-      - /home/chatgpt/htpc-download-box/config/organizr:/config
+      - /path/to/volume2:/path/in/container2
+    depends_on:
+      - service1
