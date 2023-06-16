@@ -1,38 +1,17 @@
+# Project Update
 
-    # Project Status Report
+## Task: Connect to the server and execute commands
 
-    ## Date
-    2023-06-16
+We connected to the server using the alias 'master'. The following commands were executed using nohup and ensuring unique output files:
 
-    ## Completed Tasks
+1. `nohup sudo usermod -a -G microk8s chatgpt > nohup_usermod.out 2>&1; if [ $? -ne 0 ]; then cat nohup_usermod.out; fi; du -s nohup_usermod.out`
+2. `nohup sudo chown -R chatgpt ~/.kube > nohup_chown.out 2>&1; if [ $? -ne 0 ]; then cat nohup_chown.out; fi; du -s nohup_chown.out`
+3. `nohup newgrp microk8s > nohup_newgrp.out 2>&1; if [ $? -ne 0 ]; then cat nohup_newgrp.out; fi; du -s nohup_newgrp.out`
 
-    1. Set up the default Noteable project and created a new notebook.
-    2. Shut down the kernel for the previous notebook to ensure available kernel resources.
-    3. Created and updated files in the GitHub repository using the PyGitHub module.
-    4. Set up the following services using Docker Compose:
-       - Jackett
-       - Plex
-       - Tautulli
-       - Portainer
-       - Watchtower
-       - WireGuard
-    5. Updated the TODO list in the GitHub repository.
+After executing the commands, we did some research on the current activity using WebPilot. The research provided insights into the process of creating a MicroK8s cluster and adding nodes to it. It also highlighted the importance of ensuring that the nodes have the correct time for inter-node communication to work.
 
-    ## Next Steps
+We then read and deleted all nohup output files. The output files did not provide any output, indicating that the commands were executed successfully.
 
-    1. Resolve the issue with `sudo` not being able to run as root in the current container environment.
-    2. Install MicroK8s.
-    3. Add the worker nodes to the MicroK8s cluster.
-    4. Deploy various Helm charts to the cluster, including Grafana, Prometheus, Dashboard, and Netbox.
+## Next Steps
 
-    ## Challenges
-
-    1. We're working in a Jupyter notebook environment, so we don't have the necessary permissions to start Docker services or check their status. These tasks need to be done on the local machine or server.
-    2. We have limited kernels in Noteable, so we need to avoid creating new notebooks.
-    3. The current environment does not allow `sudo` to run as root, which is necessary for the installation of MicroK8s.
-
-    ## Learnings
-
-    1. We can use the PyGitHub module to interact with GitHub repositories from a Python notebook.
-    2. We can use Docker Compose to set up multiple services with a single configuration file.
-    
+The next step is to verify that the changes have taken effect and that the worker nodes can now join the master cluster. This will involve executing the join command on the worker nodes and checking the status of the nodes.
