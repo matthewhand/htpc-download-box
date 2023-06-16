@@ -1,0 +1,11 @@
+
+graph LR
+    A[User] -- Instructs --> B[ChatGPT]
+    B -- Uses --> C[ChatSshPlug]
+    C -- Accesses --> D[Alias Master Server]
+    D -- SSH --> E[Worker1 and Worker2 Servers]
+    B -- Uses --> F[Noteable Python Notebook]
+    F -- Uses --> G[boto3 and envvars]
+    G -- Accesses --> H[AWS]
+    H -- Uses --> I[SSM Agent]
+    I -- Accesses --> D
