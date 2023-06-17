@@ -794,3 +794,6 @@ Some stuff worth looking at that I do not use at the moment:
 - [Ombi](http://www.ombi.io/): Web UI to give your shared Plex instance users the ability to request new content
 - [PlexPy](https://github.com/JonnyWong16/plexpy): Monitoring interface for Plex. Useful is you share your Plex server to multiple users.
 - Radarr lists automated downloads, to fetch best movies automatically. [Rotten Tomatoes certified movies](https://www.rottentomatoes.com/browse/cf-in-theaters/) would be a nice list to parse and get automatically.
+
+
+[Project Report](https://github.com/matthewhand/htpc-download-box/blob/main/project-report.md)
