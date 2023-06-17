@@ -1,0 +1,13 @@
+image:
+  repository: netboxcommunity/netbox
+  tag: latest
+ingress:
+  enabled: false
+  hosts:
+  - netbox.local
+postgresql:
+  postgresqlDatabase: netbox
+  postgresqlPassword: netbox
+  postgresqlUsername: netbox
+service:
+  type: ClusterIP
