@@ -1,0 +1,13 @@
+master:
+  adminPassword: admin
+  adminUser: admin
+  nodePort: 30000
+  resources:
+    limits:
+      cpu: 200m
+      memory: 512Mi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+  servicePort: 8080
+  serviceType: ClusterIP
